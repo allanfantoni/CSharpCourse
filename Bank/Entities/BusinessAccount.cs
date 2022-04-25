@@ -9,7 +9,7 @@
 
         }
 
-        public BusinessAccount(int number, string holder, double balance, double loanLimit) : base(number, holder, balance)
+        public BusinessAccount(int number, string holder, double balance, double withdrawLimit, double loanLimit) : base(number, holder, balance, withdrawLimit)
         {
             LoanLimit = loanLimit;
         }

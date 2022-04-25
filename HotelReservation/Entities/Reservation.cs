@@ -41,13 +41,13 @@ namespace HotelReservation.Entities
         private void VerifyCheckOutCheckInDates(DateTime checkIn, DateTime checkOut)
         {
             if (checkOut <= checkIn)
-                throw new DomainException("Check-out date must be after check-in date.");
+                throw new DomainException("check-out date must be after check-in date.");
         }
 
         private void VerifyFutureDates(DateTime checkIn, DateTime checkOut)
         {
             if (checkIn < DateTime.Now || checkOut < DateTime.Now)
-                throw new DomainException("Reservation dates for update must be future dates.");
+                throw new DomainException("reservation dates for update must be future dates.");
         }
 
         public override string ToString()

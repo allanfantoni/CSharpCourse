@@ -9,7 +9,7 @@
 
         }
 
-        public SavingsAccount(int number, string holder, double balance, double interestRate) : base(number, holder, balance)
+        public SavingsAccount(int number, string holder, double balance, double withdrawLimit, double interestRate) : base(number, holder, balance, withdrawLimit)
         {
             InterestRate = interestRate;
         }
