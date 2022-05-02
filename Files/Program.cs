@@ -1,5 +1,6 @@
 ﻿string sourcePath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpCourse\CSharpCourse\Files\Temp\file1.txt";
 string targetPath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpCourse\CSharpCourse\Files\Temp\file2.txt";
+string path = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpCourse\CSharpCourse\Files\Temp\MyFolder";
 
 #region First steps handling files with File and FileInfo classes
 
@@ -106,16 +107,69 @@ string targetPath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\C
 
 #region Using block simplified
 
+//try
+//{
+//    using (StreamReader sr = File.OpenText(sourcePath))
+//    {
+//        while (!sr.EndOfStream)
+//        {
+//            string line = sr.ReadLine();
+//            Console.WriteLine(line);
+//        }
+//    }
+//}
+//catch (IOException ex)
+//{
+//    Console.WriteLine($"An error occurred: {ex.Message}");
+//}
+
+#endregion
+
+#region StreamWriter
+
+//try
+//{
+//    string[] lines = File.ReadAllLines(sourcePath);
+
+//    using (StreamWriter sw = File.AppendText(targetPath))
+//    {
+//        foreach (string line in lines)
+//        {
+//            sw.WriteLine(line.ToUpper());
+//        }
+//    }
+
+//    Console.WriteLine("Successfully read first file and written second file.");
+//}
+//catch (IOException ex)
+//{
+//    Console.WriteLine($"An error occurred: {ex.Message}");
+//}
+
+#endregion
+
+#region Directory and DirectoryInfo
+
 try
 {
-    using (StreamReader sr = File.OpenText(sourcePath))
-    {
-        while (!sr.EndOfStream)
-        {
-            string line = sr.ReadLine();
-            Console.WriteLine(line);
-        }
-    }
+    IEnumerable<string> folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+    Console.WriteLine("Folders:");
+
+    foreach (string folderItem in folders)
+        Console.WriteLine(folderItem);
+
+    Console.WriteLine();
+
+    IEnumerable<string> files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+    Console.WriteLine("Files:");
+
+    foreach (string fileItem in files)
+        Console.WriteLine(fileItem);
+
+    Directory.CreateDirectory(path + @"\newfolder");
+
+    Console.WriteLine();
+    Console.WriteLine("New folder created successfully.");
 }
 catch (IOException ex)
 {
