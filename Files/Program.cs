@@ -150,26 +150,46 @@ string path = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpC
 
 #region Directory and DirectoryInfo
 
+//try
+//{
+//    IEnumerable<string> folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+//    Console.WriteLine("Folders:");
+
+//    foreach (string folderItem in folders)
+//        Console.WriteLine(folderItem);
+
+//    Console.WriteLine();
+
+//    IEnumerable<string> files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+//    Console.WriteLine("Files:");
+
+//    foreach (string fileItem in files)
+//        Console.WriteLine(fileItem);
+
+//    Directory.CreateDirectory(path + @"\newfolder");
+
+//    Console.WriteLine();
+//    Console.WriteLine("New folder created successfully.");
+//}
+//catch (IOException ex)
+//{
+//    Console.WriteLine($"An error occurred: {ex.Message}");
+//}
+
+#endregion
+
+#region Path
+
 try
 {
-    IEnumerable<string> folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
-    Console.WriteLine("Folders:");
-
-    foreach (string folderItem in folders)
-        Console.WriteLine(folderItem);
-
-    Console.WriteLine();
-
-    IEnumerable<string> files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
-    Console.WriteLine("Files:");
-
-    foreach (string fileItem in files)
-        Console.WriteLine(fileItem);
-
-    Directory.CreateDirectory(path + @"\newfolder");
-
-    Console.WriteLine();
-    Console.WriteLine("New folder created successfully.");
+    Console.WriteLine($"DirectorySeparatorChar: {Path.DirectorySeparatorChar}");
+    Console.WriteLine($"PathSeparator: {Path.PathSeparator}");
+    Console.WriteLine($"GetDirectoryName: {Path.GetDirectoryName(sourcePath)}");
+    Console.WriteLine($"GetFileName: {Path.GetFileName(sourcePath)}");
+    Console.WriteLine($"GetExtension: {Path.GetExtension(sourcePath)}");
+    Console.WriteLine($"GetFileNameWithoutExtension: {Path.GetFileNameWithoutExtension(sourcePath)}");
+    Console.WriteLine($"GetFullPath: {Path.GetFullPath(sourcePath)}");
+    Console.WriteLine($"GetTempPath: {Path.GetTempPath()}");
 }
 catch (IOException ex)
 {
