@@ -48,7 +48,7 @@ string targetPath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\C
 //{
 //    if (fs != null)
 //        fs.Close();
-    
+
 //    if (sr != null)
 //        sr.Close();
 //}
@@ -57,26 +57,69 @@ string targetPath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\C
 
 #region Another example of using StreamReader without FileStream
 
-StreamReader sr = null;
+//StreamReader sr = null;
+
+//try
+//{
+//    sr = File.OpenText(sourcePath);
+
+//    while (!sr.EndOfStream)
+//    {
+//        string line = sr.ReadLine();
+//        Console.WriteLine(line);
+//    }
+//}
+//catch (IOException ex)
+//{
+//    Console.WriteLine($"An error occurred: {ex.Message}");
+//}
+//finally
+//{
+//    if (sr != null)
+//        sr.Close();
+//}
+
+#endregion
+
+#region Using block
+
+//try
+//{
+//    using (FileStream fs = new FileStream(sourcePath, FileMode.Open))
+//    {
+//        using (StreamReader sr = new StreamReader(fs))
+//        {
+//            while (!sr.EndOfStream)
+//            {
+//                string line = sr.ReadLine();
+//                Console.WriteLine(line);
+//            }
+//        }
+//    }
+//}
+//catch (IOException ex)
+//{
+//    Console.WriteLine($"An error occurred: {ex.Message}");
+//}
+
+#endregion
+
+#region Using block simplified
 
 try
 {
-    sr = File.OpenText(sourcePath);
-
-    while (!sr.EndOfStream)
+    using (StreamReader sr = File.OpenText(sourcePath))
     {
-        string line = sr.ReadLine();
-        Console.WriteLine(line);
+        while (!sr.EndOfStream)
+        {
+            string line = sr.ReadLine();
+            Console.WriteLine(line);
+        }
     }
 }
 catch (IOException ex)
 {
     Console.WriteLine($"An error occurred: {ex.Message}");
-}
-finally
-{
-    if (sr != null)
-        sr.Close();
 }
 
 #endregion
