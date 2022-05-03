@@ -7,9 +7,9 @@ try
     Console.WriteLine("Enter rental data");
     Console.Write("Car model: ");
     string model = Console.ReadLine();
-    Console.Write("Pickup (MM/dd/yyyy hh:mm): ");
+    Console.Write("Pickup (MM/dd/yyyy hh:mm tt): ");
     DateTime start = DateTime.ParseExact(Console.ReadLine(), "MM/dd/yyyy hh:mm tt", CultureInfo.InvariantCulture);
-    Console.Write("Return (MM/dd/yyyy hh:mm): ");
+    Console.Write("Return (MM/dd/yyyy hh:mm tt): ");
     DateTime finish = DateTime.ParseExact(Console.ReadLine(), "MM/dd/yyyy hh:mm tt", CultureInfo.InvariantCulture);
 
     Console.Write("Enter price per hour: ");
