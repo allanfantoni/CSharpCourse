@@ -17,9 +17,9 @@ try
     Console.Write("Enter price per day: ");
     double day = double.Parse(Console.ReadLine());
 
-    CarRental carRental = new CarRental(start, finish, new Vehicle(model));
+    CarRental carRental = new(start, finish, new Vehicle(model));
 
-    RentalService rentalService = new RentalService(hour, day);
+    RentalService rentalService = new(hour, day, new BrazilTaxService());
     rentalService.ProcessInvoice(carRental);
 
     Console.WriteLine("INVOICE:");
