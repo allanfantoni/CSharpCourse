@@ -41,11 +41,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparingClients", "Compari
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingWithCollections", "PlayingWithCollections\PlayingWithCollections.csproj", "{D9CDC86C-5985-4BED-A4DD-DD1211664A10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparingCollections", "ComparingCollections\ComparingCollections.csproj", "{CC0025C3-632F-4B69-B709-F10D0C12D52B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparingCollections", "ComparingCollections\ComparingCollections.csproj", "{CC0025C3-632F-4B69-B709-F10D0C12D52B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessLog", "AccessLog\AccessLog.csproj", "{41CC5687-EEC4-4EF2-9E81-D1D74076AC0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessLog", "AccessLog\AccessLog.csproj", "{41CC5687-EEC4-4EF2-9E81-D1D74076AC0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineCoursePortal", "OnlineCoursePortal\OnlineCoursePortal.csproj", "{B4FE756D-CA35-4479-A1A9-42E7CA9F28E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineCoursePortal", "OnlineCoursePortal\OnlineCoursePortal.csproj", "{B4FE756D-CA35-4479-A1A9-42E7CA9F28E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteCount", "VoteCount\VoteCount.csproj", "{F8DC7A9D-F013-4438-A8EF-0190C1E1CEE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{B4FE756D-CA35-4479-A1A9-42E7CA9F28E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4FE756D-CA35-4479-A1A9-42E7CA9F28E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4FE756D-CA35-4479-A1A9-42E7CA9F28E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DC7A9D-F013-4438-A8EF-0190C1E1CEE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DC7A9D-F013-4438-A8EF-0190C1E1CEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DC7A9D-F013-4438-A8EF-0190C1E1CEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DC7A9D-F013-4438-A8EF-0190C1E1CEE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
