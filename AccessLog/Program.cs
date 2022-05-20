@@ -21,7 +21,7 @@ try
             });
         }
 
-        Console.WriteLine("Total users: " + set.Count);
+        Console.WriteLine($"Total users: {set.Count}");
     }
 }
 catch (IOException ex)
