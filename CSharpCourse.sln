@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveMinimumPrice", "RemoveMinimumPrice\RemoveMinimumPrice.csproj", "{48CF6964-BF05-4CE0-A75D-A688A5123476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddAllPrices", "AddAllPrices\AddAllPrices.csproj", "{A6DCBE25-950C-46C5-A59C-45B7C92B57DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddAllPrices", "AddAllPrices\AddAllPrices.csproj", "{A6DCBE25-950C-46C5-A59C-45B7C92B57DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperCaseForName", "UpperCaseForName\UpperCaseForName.csproj", "{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{A6DCBE25-950C-46C5-A59C-45B7C92B57DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6DCBE25-950C-46C5-A59C-45B7C92B57DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6DCBE25-950C-46C5-A59C-45B7C92B57DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@ List<Product> list = new()
     new Product("HD Case", 80.90),
 };
 
-//list.RemoveAll(p => p.Price >= 100.0);
+// list.RemoveAll(p => p.Price >= 100.0);
 list.RemoveAll(ProductTest);
 
 foreach (Product product in list)
