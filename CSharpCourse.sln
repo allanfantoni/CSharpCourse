@@ -57,7 +57,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveMinimumPrice", "Remov
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddAllPrices", "AddAllPrices\AddAllPrices.csproj", "{A6DCBE25-950C-46C5-A59C-45B7C92B57DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperCaseForName", "UpperCaseForName\UpperCaseForName.csproj", "{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpperCaseForName", "UpperCaseForName\UpperCaseForName.csproj", "{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product2Category", "Product2Category\Product2Category.csproj", "{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
