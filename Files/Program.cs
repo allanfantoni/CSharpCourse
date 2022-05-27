@@ -1,6 +1,11 @@
-﻿string sourcePath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpCourse\CSharpCourse\Files\Temp\file1.txt";
-string targetPath = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpCourse\CSharpCourse\Files\Temp\file2.txt";
-string path = @"D:\Projects\Udemy\Programação orientada a objetos - C#\CSharpCourse\CSharpCourse\Files\Temp\MyFolder";
+﻿Console.Write("Enter full file1 path: ");
+var sourcePath = Console.ReadLine();
+
+Console.Write("Enter full file2 path: ");
+var targetPath = Console.ReadLine();
+
+Console.Write("Enter full MyFolder path: ");
+var path = Console.ReadLine();
 
 #region First steps handling files with File and FileInfo classes
 
