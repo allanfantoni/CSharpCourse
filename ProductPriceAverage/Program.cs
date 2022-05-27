@@ -23,9 +23,7 @@ try
     var names = list.Where(p => p.Price < avg).OrderByDescending(p => p.Name).Select(p => p.Name);
 
     foreach (var item in names)
-    {
         Console.WriteLine(item);
-    }
 }
 catch (Exception ex)
 {
