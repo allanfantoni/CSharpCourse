@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddAllPrices", "AddAllPrice
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpperCaseForName", "UpperCaseForName\UpperCaseForName.csproj", "{6B7D68E8-FF4F-4BCF-BD9F-E6097909B836}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product2Category", "Product2Category\Product2Category.csproj", "{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product2Category", "Product2Category\Product2Category.csproj", "{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductPriceAverage", "ProductPriceAverage\ProductPriceAverage.csproj", "{AF4942DB-1F03-4811-9D25-4323DEDBD15D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5638B0ED-D9F5-4645-AF06-A0BA3BF4DF5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4942DB-1F03-4811-9D25-4323DEDBD15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4942DB-1F03-4811-9D25-4323DEDBD15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4942DB-1F03-4811-9D25-4323DEDBD15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4942DB-1F03-4811-9D25-4323DEDBD15D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
